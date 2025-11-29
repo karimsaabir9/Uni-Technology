@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Uni Technology.</h2>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/user.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teachers.html">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <div>Teachers</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-users"></i>
+                        <div>Attendance</div>
+                    </a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-database"></i>
+                        <div>Faculties</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Login And Register/login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <div>Log out</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">42</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Attendance</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">5 +</div>
+                        <div class="card-name">Faculties</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="header">
+                    <h1>Student Information</h1>
+                    <!-- Using checkbox hack for CSS-only modal control -->
+                    <label for="modalToggle" class="add-btn">Add Student</label>
+                </div>
+
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Roll-Num</th>
+                            <th>Full Name</th>
+                            <th>Date of Birth</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                            <th>Phone Number</th>
+                            <th>Previous School</th>
+                            <th>Desired Faculty</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2222</td>
+                            <td>sabir</td>
+                            <td>2025-11-27</td>
+                            <td>Male</td>
+                            <td>Somalia</td>
+                            <td>+252619011656</td>
+                            <td>Al-mathal School</td>
+                            <td>It</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2223</td>
+                            <td>Amina Hassan</td>
+                            <td>2024-05-15</td>
+                            <td>Female</td>
+                            <td>Somalia</td>
+                            <td>+252615234567</td>
+                            <td>Abii Haniifa School</td>
+                            <td>Medicine</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2224</td>
+                            <td>Mohamed Ali</td>
+                            <td>2023-12-03</td>
+                            <td>Male</td>
+                            <td>Somalia</td>
+                            <td>+252612345678</td>
+                            <td>Mogadishu Academy</td>
+                            <td>Engineering</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2225</td>
+                            <td>Fatima Ibrahim</td>
+                            <td>2024-03-20</td>
+                            <td>Female</td>
+                            <td>Somalia</td>
+                            <td>+252619876543</td>
+                            <td>Al-imra School</td>
+                            <td>Business</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2226</td>
+                            <td>Ahmed Yousuf</td>
+                            <td>2023-08-12</td>
+                            <td>Male</td>
+                            <td>Somalia</td>
+                            <td>+252614567890</td>
+                            <td>Hoyga Xamar School</td>
+                            <td>Law</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2227</td>
+                            <td>Zainab Omar</td>
+                            <td>2024-01-08</td>
+                            <td>Female</td>
+                            <td>Somalia</td>
+                            <td>+252617654321</td>
+                            <td>21-nov School</td>
+                            <td>Computer Science</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <input type="checkbox" id="modalToggle" class="modal-toggle">
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>REGISTER FORM</h2>
+                        <form class="studentForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" name="fullName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Roll-Num</label>
+                                    <input type="text" name="rollNum">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Date of Birth</label>
+                                    <input type="date" name="dateOfBirth">
+                                </div>
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <input type="text" name="gender">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nationality</label>
+                                    <input type="text" name="nationality">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="phoneNumber">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Previous School</label>
+                                    <input type="text" name="previousSchool">
+                                </div>
+                                <div class="form-group">
+                                    <label>Desired Faculty</label>
+                                    <input type="text" name="desiredFaculty">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Register Student</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

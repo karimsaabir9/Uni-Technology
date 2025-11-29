@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - University Portal</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 University Portal</h1>
+            <p>Student & Faculty Management System</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Create Account</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="regFullName">Full Name</label>
+                    <input type="text" id="regFullName" placeholder="Ali Hassan">
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">University Email</label>
+                    <input type="email" id="regEmail" placeholder="your.email@university.edu">
+                </div>
+
+                <div class="form-group">
+                    <label for="regStudentID">Student/Staff ID</label>
+                    <input type="text" id="regStudentID" placeholder="STU-2025-001">
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" placeholder="At least 8 characters">
+                    <button type="button" class="password-toggle">👁️</button>
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="regConfirmPassword">Confirm Password</label>
+                    <input type="password" id="regConfirmPassword" placeholder="Confirm your password">
+                    <button type="button" class="password-toggle">👁️</button>
+                </div>
+
+                <button type="submit" class="btn-submit"><a href="login.html">Create Account</a></button>
+            </form>
+
+            <div class="toggle-link">
+                <p>Already have an account? <a href="login.html">Sign in here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Uni Technology.</h2>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/user.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teachers.html">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <div>Teachers</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-users"></i>
+                        <div>Attendance</div>
+                    </a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-database"></i>
+                        <div>Faculties</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Login And Register/login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <div>Log out</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">42</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Attendance</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">5 +</div>
+                        <div class="card-name">Faculties</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <!-- TEACHERS SECTION -->
+                <div class="header">
+                    <h1>Teachers Information</h1>
+                    <label for="teacherModalToggle" class="add-btn">Add Teacher</label>
+                </div>
+
+                <table class="teacher-table">
+                    <thead>
+                        <tr>
+                            <th>Teacher ID</th>
+                            <th>Full Name</th>
+                            <th>Specialization</th>
+                            <th>Qualification</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Department</th>
+                            <th>Experience</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T001</td>
+                            <td>Dr. Ahmed</td>
+                            <td>Computer Science</td>
+                            <td>PhD</td>
+                            <td>ahmed@uni.edu</td>
+                            <td>+252615555001</td>
+                            <td>ICT</td>
+                            <td>12 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>T002</td>
+                            <td>Prof. Fatima</td>
+                            <td>Mathematics</td>
+                            <td>Master's</td>
+                            <td>fatima@uni.edu</td>
+                            <td>+252615555002</td>
+                            <td>Science</td>
+                            <td>8 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>T003</td>
+                            <td>Ms. Amina</td>
+                            <td>English Language</td>
+                            <td>Bachelor's</td>
+                            <td>amina@uni.edu</td>
+                            <td>+252615555003</td>
+                            <td>Languages</td>
+                            <td>6 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>T004</td>
+                            <td>Mr. Ibrahim</td>
+                            <td>Physics</td>
+                            <td>Master's</td>
+                            <td>ibrahim@uni.edu</td>
+                            <td>+252615555004</td>
+                            <td>Science</td>
+                            <td>10 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>T005</td>
+                            <td>Dr. Zainab</td>
+                            <td>Chemistry</td>
+                            <td>PhD</td>
+                            <td>zainab@uni.edu</td>
+                            <td>+252615555005</td>
+                            <td>Science</td>
+                            <td>15 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>T006</td>
+                            <td>Mr. Ali</td>
+                            <td>History</td>
+                            <td>Bachelor's</td>
+                            <td>Ali@uni.edu</td>
+                            <td>+252615555006</td>
+                            <td>Humanities</td>
+                            <td>5 years</td>
+                            <td class="actions">
+                                <button class="edit-btn">✎</button>
+                                <button class="delete-btn">🗑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <!-- Teacher Modal -->
+                <input type="checkbox" id="teacherModalToggle" class="modal-toggle">
+                <div class="modal">
+                    <div class="modal-content">
+                        <h2>TEACHER REGISTRATION FORM</h2>
+                        <form class="teacherForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" name="fullName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Teacher ID</label>
+                                    <input type="text" name="teacherId">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Specialization</label>
+                                    <input type="text" name="specialization">
+                                </div>
+                                <div class="form-group">
+                                    <label>Qualification</label>
+                                    <input type="text" name="qualification">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="phoneNumber">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Department</label>
+                                    <input type="text" name="department">
+                                </div>
+                                <div class="form-group">
+                                    <label>Experience (years)</label>
+                                    <input type="number" name="experience">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Register Teacher</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>Uni Technology.</h2>
+            </div>
+            <div class="search">
+                <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/user.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="student.html">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teachers.html">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <div>Teachers</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-users"></i>
+                        <div>Attendance</div>
+                    </a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-database"></i>
+                        <div>Faculties</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Login And Register/login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <div>Log out</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">42</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Attendance</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">5 +</div>
+                        <div class="card-name">Faculties</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="charts-grid">
+                    <!-- Bar Chart -->
+                    <div class="chart-card">
+                        <h3>Students by Faculty</h3>
+
+                        <div class="bar-chart">
+
+                            <div class="bar-item">
+                                <div class="bar-label">Engineering</div>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 85%;"></div>
+                                </div>
+                                <div class="bar-value">340</div>
+                            </div>
+
+                            <div class="bar-item">
+                                <div class="bar-label">Medicine</div>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 70%;"></div>
+                                </div>
+                                <div class="bar-value">280</div>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label">Business</div>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 65%;"></div>
+                                </div>
+                                <div class="bar-value">260</div>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label">Arts</div>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 55%;"></div>
+                                </div>
+                                <div class="bar-value">220</div>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-label">Science</div>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 75%;"></div>
+                                </div>
+                                <div class="bar-value">300</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Cards -->
+                    <div class="chart-card">
+                        <h3>Statistics</h3>
+                        <div class="stats-grid">
+
+                            <div class="stat-box">
+                                <div class="stat-number">1217</div>
+                                <div class="stat-label">Total Students</div>
+                            </div>
+
+                            <div class="stat-box">
+                                <div class="stat-number">42</div>
+                                <div class="stat-label">Total Teachers</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">68</div>
+                                <div class="stat-label">Employees</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Faculties</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
