@@ -1172,6 +1172,10 @@ input {
         font-size: 1.25rem;
     }
 
+    .right {
+        width: 100%;
+    }
+
     .right img {
         width: 100%;
         margin-left: 0rem;
@@ -1343,6 +1347,10 @@ input {
 
     .left-text p {
         font-size: 0.8rem;
+    }
+
+    .right {
+        width: 100%;
     }
 
     .right img {
